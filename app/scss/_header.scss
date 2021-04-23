@@ -1,0 +1,136 @@
+.header {
+  &__top {
+    background-color: $main-color;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: $padding;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    line-height: normal;
+    font-family: $font-top-header;
+    &__contact {
+      span {
+        padding-right: 2.2rem;
+
+        .fas {
+          font-size: 0.5rem;
+        }
+      }
+    }
+
+    &__links {
+      position: relative;
+      a {
+        text-decoration: none;
+        padding: 0 .9rem;
+        color: #fff;
+        display: inline-block;
+        border-right: 1px solid #fff;
+
+        &:last-child {
+          border-right: none;
+          padding: 0 0 0 1rem;
+
+        }
+      }
+    }
+  }
+  &__middle {
+    padding: $padding;
+    margin-bottom: 1rem;
+    margin-top: 0.7rem;
+
+    &__logo {
+      padding-top: 0.7rem;
+      position: relative;
+      .header__middle__img {
+        position: absolute;
+        left: 0;
+      }
+    }
+    &__input {
+      padding-top: 0.7rem;
+      &__wrapper {
+        border: 1px solid black;
+        margin-top: 0.7rem;
+        margin-bottom: 1.2rem;
+
+        &__input {
+          padding: 0.5rem 1rem;
+          border: none;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        i {
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding: $padding;
+
+    &__navbar {
+      background-color: $main-color;
+      position: relative;
+      padding-top: 0.9rem;
+
+      .navbar__hamburger {
+        color: #fff;
+      }
+
+      .home-wrapper {
+        background-color: $second-color;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 0 0.3rem 0 1.3rem;
+      }
+      .navbar__link {
+        @include nav-style;
+        margin-left: 3.2rem;
+        &:hover {
+          color: rgb(207, 203, 203);
+        }
+
+        &__first {
+        margin-left: 4.6rem;
+
+        }
+
+        &__home {
+          @include nav-style;
+          background-color: $second-color;
+          margin-bottom: 0.1rem;
+          margin-top: 0.7rem;
+          color: #fff;
+          
+
+          .home {
+            font-size: 0.9rem;
+          }
+        }
+
+        .fa-home {
+          font-size: 1rem;
+        }
+      }
+      .navbar__child-link {
+        color: $nav-child-list;
+
+        &__span {
+          background-color: $second-color;
+          display: inline-block;
+          color: #fff;
+          padding: 0 0.4rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

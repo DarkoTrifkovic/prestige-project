@@ -1,0 +1,422 @@
+.main {
+  margin-top: 2rem;
+  padding: $padding;
+  z-index: 1;
+
+  &__hero {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.5rem;
+    &__left {
+      background: url("../images/hero/hero.jpg") no-repeat;
+      position: relative;
+      background-size: cover;
+      padding-bottom: 25rem;
+      &__text-holder {
+        background-color: #e4e8ea;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        padding-top: 5.5rem;
+        padding-left: 2.2rem;
+
+        h3 {
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $hero-header-4;
+          font-size: 1.15rem;
+        }
+        h1 {
+          font-weight: bold;
+          font-family: $font-secondary;
+          font-size: 2.25rem;
+        }
+
+        .hero__btn {
+          background-color: $second-color;
+          color: #fff;
+          border: none;
+          font-size: 0.9rem;
+          padding: 0.8em;
+          font-family: $font-secondary;
+          margin-top: 2.5rem;
+
+          .btn-arrow {
+            padding-left: 2.7em;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+
+    &__right {
+      display: grid;
+      gap: 2rem;
+      &__img-holder {
+        img {
+          display: block;
+          margin-left: 0.7rem;
+        }
+      }
+    }
+    &__circle-holder {
+      margin-top: 6.7rem;
+
+      .main__circle {
+        font-size: 0.7rem;
+        padding: 0.11rem;
+      }
+    }
+  }
+
+  .main__sta {
+    margin-top: 2rem;
+    background-color: $main-color;
+    color: #fff;
+    font-size: .7rem;
+
+    &__card {
+      border-right: 1px solid #000;
+      padding-bottom: 0.5rem;
+      line-height: 0.1;
+      &__one {
+        width: 32.7%;
+      }
+      &__two {
+        width: 36.3%;
+        padding-left: 2rem;
+      }
+      &__three {
+        width: 31%;
+        padding-left: 2.5rem;
+
+        p,
+        h4,
+        a {
+          padding-left: 0.8rem;
+        }
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    p {
+      padding-top: 1.5rem;
+      text-transform: uppercase;
+      color: $color-sta-p;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      font-family: $font-secondary;
+      font-weight: bold;
+      margin-top: -0.4rem;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      padding-bottom: 0.6rem;
+      padding-top: 0.3rem;
+      i {
+        padding-left: 1rem;
+      }
+    }
+  }
+  .sale,
+  .neu,
+  .top-marken {
+    .sale__search,
+    .neu__top,
+    .top-marken__top {
+        @include border-bottom;
+
+      &__right {
+        button {
+          padding: 0 0.6rem;
+          border: 1px solid $second-color;
+          background-color: #fff;
+
+          &:last-child {
+            margin-left: 0.5rem;
+          }
+
+          i {
+            font-size: 0.6rem;
+          }
+        }
+      }
+      h3 {
+        font-weight: bold;
+        font-family: $font-secondary;
+      }
+    }
+
+    .sale__cards,
+    .neu__cards {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+    }
+
+    .sale__card,
+    .neu__card {
+      position: relative;
+
+      &:hover {
+        box-shadow: 1px 1px 13px #888888;
+      }
+      &__text-holder {
+        p,
+        span {
+          font-family: $font-secondary;
+        }
+
+        p {
+          line-height: 60%;
+          text-transform: capitalize;
+
+          &:first-child {
+              padding-top: .5rem;
+          }
+        }
+
+        &__p {
+          color: $color-sale-p;
+          padding-top: .5rem;
+          font-size: 0.8rem;
+        }
+
+        &__span--red {
+          color: $second-color;
+          font-size: 0.8rem;
+          font-weight: bold;
+        }
+
+        &__span--grey {
+          color: $color-sale-span;
+          font-size: 0.8rem;
+        }
+
+        &__button {
+          background-color: $main-color;
+          color: #fff;
+          padding: 0.62rem 1.3rem;
+          font-size: 0.6em;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: .5rem;
+          margin-left: 0.35rem;
+          margin-top: -.5rem;
+          border: none;
+
+          &:hover {
+            background-color: $second-color;
+          }
+        }
+
+        &__heart {
+          background-color: $color-sale-heart;
+          padding: 0.35rem;
+          position: absolute;
+          right: 1rem;
+          margin-bottom: .5rem;
+          margin-top: -.5rem;
+        }
+      }
+
+      &__img-holder {
+        position: relative;
+
+        img {
+          padding-top: 1.5rem;
+        }
+
+        &__sale {
+          position: absolute;
+          top: 0;
+          right: -0.8rem;
+          background-color: $second-color;
+          color: #fff;
+
+          p {
+            padding: 1.1rem 0.6rem 0;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .magazin {
+    margin-top: 4.7rem;
+    margin-bottom: 5.6rem;
+
+    &__top {
+        @include border-bottom;
+    }
+    &__right {
+      padding: 0.3rem;
+
+      &__button {
+        background-color: white;
+        border: 1px solid $second-color;
+        padding: 0 0.7rem;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-family: $font-secondary;
+        color: $color-magazin-button-text;
+        margin-right: .5rem;
+  
+      }
+    }
+
+    &__left {
+      h3 {
+        font-family: $font-secondary;
+        font-weight: bold;
+        font-size: 1.87rem;
+      }
+    }
+  }
+
+  .magazin__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2.3rem;
+
+    &__img-holder {
+      img {
+        max-width: 100%;
+      }
+    }
+    &__text-holder {
+      font-size: 0.8rem;
+      margin-left: -1rem;
+      h4,
+      button {
+        font-family: $font-secondary;
+      }
+      h4 {
+        margin-bottom: 1.5rem;
+      }
+      p {
+        color: $color-magazin-p;
+        line-height: 1.45;
+      }
+      button {
+        background-color: white;
+        padding: 0.6em 0.55em;
+        border: 1px solid black;
+        margin-top: 1.85rem;
+        i {
+          padding-left: 3rem;
+        }
+      }
+    }
+  }
+
+  .fokus {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5.6rem;
+
+    &__card {
+      height: 270px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--one {
+        background: url("../../images/fokus/fokus1.jpg") no-repeat;
+        background-size:100% 100%;
+      }
+      &--two {
+        background: url("../../images/fokus/fokus2.jpg") no-repeat;
+        background-size:100% 100%;
+      }
+      &--three {
+        background: url("../../images/fokus/fokus3.jpg") no-repeat;
+        background-size:100% 100%;
+      }
+      &--four {
+        background: url("../../images/fokus/fokus4.jpg") no-repeat;
+        background-size:100% 100%;
+      }
+      &__text-holder {
+        background-color: rgba($color: $color-fokus, $alpha: 0.9);
+        text-align: center;
+        width: 60%;
+        height: 60%;
+        padding-top: 25%;
+        h4,
+        p {
+          font-family: $font-secondary;
+          line-height: 60%;
+        }
+        p {
+          font-size: 0.9rem;
+          color: #afabaa;
+        }
+        h4 {
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .top-marken {
+    margin-bottom: 9.4rem;
+
+    &__bottom {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-top: 5.5rem;
+      gap: 5.4rem;
+      margin-left: -0.5rem;
+      &__brand {
+        align-self: end;
+      }
+    }
+  }
+
+  .newsletter {
+    background-color: $second-color;
+    margin-bottom: -4rem;
+    padding: 2rem 0;
+    h3,
+    button {
+      color: #fff;
+      font-family: $font-secondary;
+    }
+    &__input-holder {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-right: 2.2rem;
+      &__button {
+        background-color: $main-color;
+        font-size: 0.9em;
+        padding: 1.2rem 1.3rem;
+        border: none;
+        i {
+          padding-left: 3em;
+          font-size: 0.7em;
+        }
+      }
+      &__input {
+          width: 60%;
+          padding: 1rem;
+      }
+    }
+    &__text-holder {
+      padding-left: 4.7rem;
+        padding-top: .7rem;
+    }
+  }
+}

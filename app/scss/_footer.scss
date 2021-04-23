@@ -1,0 +1,49 @@
+.footer {
+    background-color: $main-color;
+    padding: $padding;
+    padding-top: 9.4rem;
+    padding-bottom: 1rem;
+    &__top {
+        border-bottom: 1px solid #000;
+        padding-bottom: 5rem;
+        &__h4 {
+            color: #fff;
+            font-family: $font-secondary;
+            font-weight: bold;
+            padding-bottom: 1.2rem;
+        }
+        &__a {
+            text-decoration: none;
+            color: $color-footer-link;
+            display: block;
+            padding: .4rem;
+            font-size: .9rem;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    &__bottom {
+        color: #fff;
+        padding-top: .6rem;       
+
+        &__social-media {
+            &__link {
+                border: 1px solid #fff;
+                padding: .55rem .9rem;
+                display: inline-block;
+                margin: .8rem .2rem;
+                &:first-child {
+                    padding: .55rem 1rem;
+                }
+            }
+
+        }
+        &__copyright {
+            small {
+                font-size: .75rem;
+            }
+        }
+    }
+}

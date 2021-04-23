@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige</title>
+    <script src="https://kit.fontawesome.com/d41c49c611.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="header">
+                <div class="row header__top">
+                    <div class="header__top__contact col-lg-6 col-md-12 d-flex justify-content-lg-start justify-content-center ps-0">
+                        <span><i class="fas fa-mobile-alt"></i> 031.312.13.20</span>
+                        <span><i class="far fa-envelope"></i> info@prestige-bern.ch</span>
+                    </div>
+                    <div class="header__top__links col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-center pe-0">
+                        <a href="">Benutzerkonto</a>
+                        <a href="">Wunschliste</a>
+                        <a href="">Registrieren &nbsp; <i class="fas fa-user"></i></a>
+                        <a href=""><i class="fas fa-shopping-cart"></i> &nbsp; Warenkorb 0,00 Fr. <i class="fas fa-angle-down"></i></a>
+                    </div>
+                </div>
+                <div class="row header__middle d-flex">
+                    <div class="header__middle__logo col-12 col-md-6">
+                        <img class="header__middle__img" src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="header__middle__input col-12 col-md-6 d-flex justify-content-center justify-content-sm-end pe-0">
+                        <div class="header__middle__input__wrapper">
+                            <input type="text" class="header__middle__input__wrapper__input" placeholder="Search" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row header__bottom">
+                    <nav class="navbar navbar-expand-lg header__bottom__navbar">
+                        <div class="container-fluid">
+                        <div class="home-wrapper"><a class="navbar-brand navbar__link__home" href="#"><i class="fas fa-home home"></i></a></div>  
+                          <button class="navbar-toggler navbar__hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fas fa-bars"></i></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link navbar__link navbar__link__first" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      HERRENUHREN <i class="fas fa-angle-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <li><a class="dropdown-item navbar__child-link" href="#">nach Typ&nbsp; <i class="fas fa-angle-right"></i></a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">nach Material&nbsp; <i class="fas fa-angle-right"></i></a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">nach Uhrwerk&nbsp; <i class="fas fa-angle-right"></i></a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">Analoguhren</a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">Automatikuhren</a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">Chronograph</a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">Digitaluhren</a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">Golduhren</a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">Swiss Made Uhren</a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">Titaniumuhren</a></li>
+                                      <li><a class="dropdown-item navbar__child-link" href="#">Uhren mit Diamanten</a></li>
+                                    </ul>
+                                  </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link navbar__link" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  DAMENUHREN <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Alpina</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Burberry</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Calvin Klein</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Casio</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Certina</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Citizen</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Corum</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Daniel Wellington</a></li>
+                                  <li><a class="dropdown-item child-list" href="#">Diesel</a></li>
+                                  <li><a class="dropdown-item child-list" href="#">Ebel</a></li>
+                                  <li><a class="dropdown-item child-list" href="#">Edox <span class="navbar__child-link__span">Neu</span></a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link navbar__link" href="#" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  VICTORINOX <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Emporio Armani</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Festina</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Fossil</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Frederique Constant</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Garmin</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Gucci</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Guess</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Hamilton</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Henry Landon</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Hugo Boss</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Jasques Lemans <span class="navbar__child-link__span">Neu</span></a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link navbar__link" href="#" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  JEWELLERY <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                                  <li><a class="dropdown-item navbar__child-list" href="#">Junghans <span class="navbar__child-link__span">Neu</span></a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Justex</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Lacoste</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Louis Erard</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Luminox</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Maurice Lacroix</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Michael Kors</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Mondaine</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Movado</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Oris</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Paul Hewitt <span class="navbar__child-link__span">Neu</span></a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link navbar__link" href="#" id="navbarDropdownMenuLink5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  TRAURINGE <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Police</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Rado</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Seiko</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Skagen</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Swiss Military Hanowa</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Tissot</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Tommy Hilfiger</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Victorinox</a></li>
+                                  <li><a class="dropdown-item navbar__child-link" href="#">Wiliam L. 1985</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link navbar__link" href="#" id="navbarDropdownMenuLink6" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  VERLOBUNGSRINGE <i class="fas fa-angle-down"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+            </header>
+            <main class="main">
+                <div class="main__hero row">
+                  <div class="main__hero__left">
+                      <div class="row">
+                          <div class="col-md-5 col-sm-9 main__hero__left__text-holder">
+                              <h3>Victorinox</h3>
+                              <h1>I.N.O.X. CARBON</h1>
+                              <button class="hero__btn">SHOP NOW <i class="fas fa-arrow-right btn-arrow"></i></button>
+                              <div class="main__hero__circle-holder">
+                                  <i class="far fa-circle main__circle"></i><i class="fas fa-circle main__circle"></i><i class="far fa-circle main__circle"></i><i class="far fa-circle main__circle"></i><i class="far fa-circle main__circle"></i>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+                    <div class="main__hero__right">
+                      <div class="row main__hero__right__img-holder">
+                          <img src="images/hero/hero_tissot.jpg" alt="tissot">
+                      </div>
+                      <div class="row main__hero__right__img-holder">
+                          <img src="images/hero/hero_diesel.jpg" alt="diesel">
+                      </div>
+                    </div>
+
+                </div>
+                <div class="row main__sta">
+                  <div class="row d-flex justify-content-center align-items-center main__sta__card main__sta__card__one">
+                    <div class="main__sta__img-holder col-2">
+                      <img src="images/sta/sta1.png" alt="sta1">
+                    </div>
+                    <div class="main__sta__text-holder col-10 ps-5">
+                        <p>JETZT BESTELLEN, NACHHER BEZAHLEN!</p>
+                        <h4>0%-Ratenzahlung bis CHF 3000.-</h4>
+                        <a href="#">MEHR <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center align-items-center main__sta__card main__sta__card__two ps-5 pe-1">
+                      <div class="main__sta__img-holder col-2">
+                          <img src="images/sta/sta2.png" alt="sta2">
+                        </div>
+                        <div class="main__sta__text-holder col-10 ps-4">
+                          <p>ES WAR NOCH NIE EINFACHER ONLINE ZU BESTELLEN</p>
+                          <h4>Kauf auf Rechnung</h4>
+                          <a href="#">MEHR <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                  </div>
+                  <div class="row d-flex justify-content-center align-items-center main__sta__card main__sta__card__three">
+                      <div class="main__sta__img-holder col-2  ps-0">
+                          <img src="images/sta/sta3.png" alt="sta3">
+                        </div>
+                        <div class="main__sta__text-holder col-10 ps-5">
+                          <p>SIE BESTELLEN, WIR LIEFERN!</p>
+                          <h4>Kostenloser Versand</h4>
+                          <a href="#">MEHR <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                  </div>
+              </div>
+                <section class="sale mt-3">
+                    <div class="row sale__search">
+                      <div class="col ps-0 py-1 sale__search__left">
+                          <h3>SALE</h3>
+                      </div>
+                      <div class="col sale__search__right d-flex my-1 pb-2 justify-content-end pe-0">
+                          <button><i class="fas fa-arrow-left"></i></button>
+                          <button><i class="fas fa-arrow-right"></i></button>
+                      </div>
+                    </div>
+                    <div class="row sale__cards mt-4 mb-4">
+                        <div class="sale__card mt-3">
+                            <div class=" col sale__card__img-holder">
+                                <img src="images/sale/sale1.jpg" alt="sale1">
+                                <div class="sale__card__img-holder__sale">
+                                    <p>SALE</p>
+                                </div>
+                            </div>
+                            <div class="sale__card__text-holder mt-4">
+                                <p>Maurice Lacroix Pontos S</p>
+                                <p>Special Edition FC Basel 1893</p>
+                                <p class="sale__card__text-holder__p">PT6008-SS002-432-1</p>
+                                <span class="sale__card__text-holder__span--red">jetzt 2.075,00 Fr.</span>
+                                <span class="sale__card__text-holder__span--grey"><del>4.150,00 Fr</del></span>
+                                <hr>
+                                <button class="sale__card__text-holder__button">ADD TO CART</button>
+                                <span class="sale__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                            </div>
+                          </div>
+                          <div class="sale__card mt-3">
+                              <div class="sale__card__img-holder">
+                                  <img src="images/sale/sale2.jpg" alt="sale2">
+                                  <div class="sale__card__img-holder__sale">
+                                    <p>SALE</p>
+                                </div>
+                              </div>
+                              <div class="sale__card__text-holder mt-4">
+                                <p>Maurice Lacroix Pontos S</p>
+                                <p>Special Edition FC Basel 1893</p>
+                                <p class="sale__card__text-holder__p">PT6008-SS002-432-1</p>
+                                  <span class="sale__card__text-holder__span--red">jetzt 2.075,00 Fr.</span>
+                                  <span class="sale__card__text-holder__span--grey"><del>4.150,00 Fr</del></span>
+                                  <hr>
+                                  <button class="sale__card__text-holder__button">ADD TO CART</button>
+                                  <span class="sale__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                              </div>
+                          </div>
+                          <div class="sale__card mt-3">
+                              <div class="sale__card__img-holder">
+                                  <img src="images/sale/sale3.jpg" alt="sale3">
+                                  <div class="sale__card__img-holder__sale">
+                                    <p>SALE</p>
+                                </div>
+                              </div>
+                              <div class="sale__card__text-holder mt-4">
+                                <p>Maurice Lacroix Pontos S</p>
+                                <p>Special Edition FC Basel 1893</p>
+                                <p class="sale__card__text-holder__p">PT6008-SS002-432-1</p>
+                                  <span class="sale__card__text-holder__span--red">jetzt 2.075,00 Fr.</span>
+                                  <span class="sale__card__text-holder__span--grey"><del>4.150,00 Fr</del></span>
+                                  <hr>
+                                  <button class="sale__card__text-holder__button">ADD TO CART</button>
+                                  <span class="sale__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                              </div>
+                          </div>
+                          <div class="sale__card mt-3">
+                              <div class="sale__card__img-holder">
+                                  <img src="images/sale/sale4.jpg" alt="sale4">
+                                  <div class="sale__card__img-holder__sale">
+                                    <p>SALE</p>
+                                </div>
+                              </div>
+                              <div class="sale__card__text-holder mt-4">
+                                <p>Maurice Lacroix Pontos S</p>
+                                <p>Special Edition FC Basel 1893</p>
+                                <p class="sale__card__text-holder__p">PT6008-SS002-432-1</p>
+                                  <span class="sale__card__text-holder__span--red">jetzt 2.075,00 Fr.</span>
+                                  <span class="sale__card__text-holder__span--grey"><del>4.150,00 Fr</del></span>
+                                  <hr>
+                                  <button class="sale__card__text-holder__button">ADD TO CART</button>
+                                  <span class="sale__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                              </div>
+                          </div>
+                          <div class="sale__card mt-3">
+                              <div class="sale__card__img-holder">
+                                  <img src="images/sale/sale5.jpg" alt="sale5">
+                                  <div class="sale__card__img-holder__sale">
+                                    <p>SALE</p>
+                                </div>
+                              </div>
+                              <div class="sale__card__text-holder mt-4">
+                                  <p>Maurice Lacroix Pontos S</p>
+                                  <p>Special Edition FC Basel 1893</p>
+                                  <p class="sale__card__text-holder__p">PT6008-SS002-432-1</p>
+                                  <span class="sale__card__text-holder__span--red">jetzt 2.075,00 Fr.</span>
+                                  <span class="sale__card__text-holder__span--grey"><del>4.150,00 Fr</del></span>
+                                  <hr>
+                                  <button class="sale__card__text-holder__button">ADD TO CART</button>
+                                  <span class="sale__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                              </div>
+                          </div>
+                    </div>
+                </section>
+                <section class="magazin">
+                    <div class="row magazin__top">
+                        <div class="magazin__left col ps-0 py-1">
+                            <h3>MAGAZIN FUR UHREN UND SCHMUCK</h3>
+                        </div>
+                        <div class="magazin__right col d-flex pb-3 justify-content-end pe-0">
+                            <button class="magazin__right__button">ZUM MAGAZIN</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="magazin__card col-md-4 col-sm-6 col-xs-12">
+                            <div class="magazin__card__img-holder">
+                                <img src="images/magazin/magazin1.jpg" alt="magazin1">
+                            </div>
+                            <div class="magazin__card__text-holder">
+                                <h4>Wir präsentieren...</h4>
+                                <p>Endlich sind sie da! Die styliashen Uhren der neuen Kollektion Classic Black von Danien Wellington sind soeben bei uns eingetroffen...</p>
+                                <button>MEHR <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="magazin__card col-md-4 col-sm-5 col-xs-12">
+                            <div class="magazin__card__img-holder">
+                                <img src="images/magazin/magazin2.jpg" alt="magazin2">
+                            </div>
+                            <div class="magazin__card__text-holder">
+                                <h4>TOMMY loves GIGI</h4>
+                                <p>Endlich sind sie da! Die styliashen Uhren der neuen Kollektion Classic Black von Danien Wellington sind soeben bei uns eingetroffen...</p>
+                                <button>MEHR <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="magazin__card col-md-4 col-sm-5 col-xs-12">
+                            <div class="magazin__card__img-holder">
+                                <img src="images/magazin/magazin3.jpg" alt="magazin3">
+                            </div>
+                            <div class="magazin__card__text-holder">
+                                <h4>Up in the Air</h4>
+                                <p>Endlich sind sie da! Die styliashen Uhren der neuen Kollektion Classic Black von Danien Wellington sind soeben bei uns eingetroffen...</p>
+                                <button>MEHR <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="neu">
+                    <div class="row neu__top">
+                        <div class="col ps-0 py-1 neu__top__left">
+                            <h3>NEU EINGETROFFEN</h3>
+                        </div>
+                        <div class="col neu__top__right d-flex pb-3 justify-content-end pe-0">
+                            <button><i class="fas fa-arrow-left"></i></button>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="row neu__cards mt-4 mb-4">
+                        <div class="neu__card mt-3">
+                            <div class=" col sale__card__img-holder">
+                                <img src="images/new/new1.jpg" alt="neu1">
+                            </div>
+                            <div class="neu__card__text-holder mt-4">
+                                <p>Airboss Mechanical Black</p>
+                                <p>Edition</p>
+                                <p class="neu__card__text-holder__p">PT6008-SS002-432-1</p>
+                                <span class="neu__card__text-holder__span--red">2.075,00 Fr.</span>
+                                <hr>
+                                <button class="neu__card__text-holder__button">ADD TO CART</button>
+                                <span class="neu__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                            </div>
+                          </div>
+                          <div class="neu__card mt-3">
+                              <div class="neu__card__img-holder">
+                                <img src="images/new/new2.jpg" alt="neu2">
+                              </div>
+                              <div class="neu__card__text-holder mt-4">
+                                <p>Maurice Lacroix Pontos S</p>
+                                <p>Horological Smartwatch</p>
+                                <p class="neu__card__text-holder__p">PT6008-SS002-432-1</p>
+                                  <span class="neu__card__text-holder__span--red">995,00 Fr.</span>
+                                  <hr>
+                                  <button class="neu__card__text-holder__button">ADD TO CART</button>
+                                  <span class="neu__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                              </div>
+                          </div>
+                          <div class="neu__card mt-3">
+                              <div class="neu__card__img-holder">
+                                <img src="images/new/new3.jpg" alt="neu3">
+                              </div>
+                              <div class="neu__card__text-holder mt-4">
+                                <p>Hamilton Jazzmaster Auto</p>
+                                <p>Chrono</p>
+                                <p class="neu__card__text-holder__p">PT6008-SS002-432-1</p>
+                                  <span class="neu__card__text-holder__span--red">2.300,00 Fr.</span>
+                                  <hr>
+                                  <button class="neu__card__text-holder__button">ADD TO CART</button>
+                                  <span class="neu__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                              </div>
+                          </div>
+                          <div class="neu__card mt-3">
+                              <div class="neu__card__img-holder">
+                                <img src="images/new/new4.jpg" alt="neu4">
+                              </div>
+                              <div class="neu__card__text-holder mt-4">
+                                <p>Hamilton Khaki Pilot Auto</p>
+                                <p>Chrono</p>
+                                <p class="neu__card__text-holder__p">PT6008-SS002-432-1</p>
+                                  <span class="neu__card__text-holder__span--red">2.075,00 Fr.</span>
+                                  <hr>
+                                  <button class="neu__card__text-holder__button">ADD TO CART</button>
+                                  <span class="neu__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                              </div>
+                          </div>
+                          <div class="neu__card mt-3">
+                              <div class="neu__card__img-holder">
+                                <img src="images/new/new5.jpg" alt="neu5">
+                              </div>
+                              <div class="neu__card__text-holder mt-4">
+                                  <p>I.N.O.X Professional Diver</p>
+                                  <p>&nbsp;</p>
+                                  <p class="neu__card__text-holder__p">PT6008-SS002-432-1</p>
+                                  <span class="neu__card__text-holder__span--red">2.075,00 Fr.</span>
+                                  <hr>
+                                  <button class="neu__card__text-holder__button">ADD TO CART</button>
+                                  <span class="neu__card__text-holder__heart"><i class="far fa-heart"></i></span>
+                              </div>
+                          </div>
+                    </div>
+                </section>
+                <section class="fokus">
+                    <div class="fokus__card fokus__card--one">
+                        <div class="fokus__card__text-holder">
+                            <p>IM FOKUS</p>
+                            <h4>MICHAEL KORS</h4>
+                        </div>
+                    </div>
+                    <div class="fokus__card fokus__card--two">
+                        <div class="fokus__card__text-holder">
+                            <p>IM FOKUS</p>
+                            <h4>VICTORINOX</h4>
+                        </div>
+                    </div>
+                    <div class="fokus__card fokus__card--three">
+                        <div class="fokus__card__text-holder">
+                            <p>IM FOKUS</p>
+                            <h4>DIESEL</h4>
+                        </div>
+                    </div>
+                    <div class="fokus__card fokus__card--four">
+                        <div class="fokus__card__text-holder">
+                            <p>IM FOKUS</p>
+                            <h4>TISSOT</h4>
+                        </div>
+                    </div>
+                </section>
+                <section class="top-marken">
+                    <div class="row top-marken__top">
+                        <div class="col ps-0 py-1 neu__top__left mt-1">
+                            <h3>TOP MARKEN</h3>
+                        </div>
+                        <div class="col top-marken__top__right d-flex pb-3 justify-content-end pe-1 mt-2">
+                            <button><i class="fas fa-arrow-left"></i></button>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="top-marken__bottom">
+                        <div class="top-marken__bottom__brand">
+                            <img class="top-marken__bottom__brand__img" src="images/brand/brand1.jpg" alt="brand1">
+                        </div>
+                        <div class="top-marken__bottom__brand">
+                            <img src="images/brand/brand2.jpg" alt="brand2">
+                        </div>
+                        <div class="top-marken__bottom__brand">
+                            <img src="images/brand/brand3.jpg" alt="brand3">
+                        </div>
+                        <div class="top-marken__bottom__brand">
+                            <img src="images/brand/brand4.jpg" alt="brand4">
+                        </div>
+                        <div class="top-marken__bottom__brand">
+                            <img src="images/brand/brand5.jpg" alt="brand5">
+                        </div>
+                    </div>
+                </section>
+                <section class="newsletter row">
+                    <div class="newsletter__text-holder col-md-6 col-sm-12 d-flex justify-content-center justify-content-md-start">
+                        <h3>SIGN UP FOR OUR NEWSLETTER</h3>
+                    </div>
+                    <div class="newsletter__input-holder col-md-6 col-sm-12 d-flex justify-content-center">
+                        <input class="newsletter__input-holder__input" type="email" placeholder="Ihre e-mail">
+                        <button class="newsletter__input-holder__button">SENDEN<i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__top row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer__top__h4">
+                            <h6>SERVICES</h6>
+                        </div>
+                        <div class="footer__top__links">
+                            <a href="#" class="footer__top__a">Uhrenservice</a>
+                            <a href="#" class="footer__top__a">Schmuckservice</a>
+                            <a href="#" class="footer__top__a">Armband-service</a>
+                            <a href="#" class="footer__top__a">Altgoldankauf</a>
+                            <a href="#" class="footer__top__a">Wasserdichtigkeit</a>
+                            <a href="#" class="footer__top__a">Gift Card</a>  
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer__top__h4">
+                            <h6>BESTELLUNG</h6>
+                        </div>
+                        <div class="footer__top__links">
+                            <a href="#" class="footer__top__a">Einkaufen</a>
+                            <a href="#" class="footer__top__a">Bezahlen</a>
+                            <a href="#" class="footer__top__a">Versand & Lieferung</a>
+                            <a href="#" class="footer__top__a">Umtausch aund Ruckgabe</a>  
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer__top__h4">
+                            <h6>INFORMATIONEN</h6>
+                        </div>
+                        <div class="footer__top__links">
+                            <a href="#" class="footer__top__a">Allgemeine-Geschäftsbedingungen</a>
+                            <a href="#" class="footer__top__a">Ratenzahlung</a>
+                            <a href="#" class="footer__top__a">Klimaneutral</a>
+                            <a href="#" class="footer__top__a">Greschäftskunde</a>   
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer__top__h4">
+                            <h6>UBER UNS</h6>
+                        </div>
+                        <div class="footer__top__services-links">
+                            <a href="#" class="footer__top__a">Kontakt</a>
+                            <a href="#" class="footer__top__a">Filialen</a>
+                            <a href="#" class="footer__top__a">Impressum</a>
+                            <a href="#" class="footer__top__a">Geschichte</a>
+                            <a href="#" class="footer__top__a">Offene Stellen</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer__bottom row">
+                    <div class="footer__bottom__copyright col-sm-6 col-12 pt-4">
+                        <small>&copy; 2017.Copyright Prestige. All rights reserved.</small>
+                    </div> 
+                    <div class="footer__bottom__social-media col-sm-6 col-12 d-flex justify-content-sm-end pe-0">
+                        <a class="footer__bottom__social-media__link" href="#"><img src="images/footer/facebook.png" alt="facebook"></a>
+                        <a class="footer__bottom__social-media__link" href="#"><img src="images/footer/twitter.png" alt="twitter"></a>
+                        <a class="footer__bottom__social-media__link" href="#"><img src="images/footer/linkedin.png" alt="linkedin"></a>
+                    </div> 
+                </div>
+            </footer>
+      </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="dist/script.js"></script>
+</body>
+</html>
